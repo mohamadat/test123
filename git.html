@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git</title>
+</head>
+<body>
+
+    <a href="https://desktop.github.com/download/">GitHub</a>
+
+    <br>
+    <a href="https://git-scm.com/downloads">Git</a>
+   
+   <br>
+   <br>
+   <br>
+
+    git --version
+    <br>
+    Repositories - Clone - Staging and Committing
+    Branch - Merge - Push - Pull
+    <br>
+
+    git config --global user.name "w3schools-test"
+    git config --global user.email "test@w3schools.com"
+
+
+    <br>
+    mkdir myproject
+    cd myproject
+    git init 
+    <br>
+
+    ls
+    git status
+
+    <br>
+    --staging--
+    git add index.html
+    git status
+    <br>
+
+    git add --all
+    git status
+    git commit -m "First release of Hello World!"
+
+    <br>
+
+
+    <br>
+    git commit -a -m "Updated index.html with a new line"
+    <br>
+
+    git log
+
+    <br>
+    new branch = git branch hello-world-images
+    show branches = git branch
+    go to branch = git checkout hello-world-images
+
+    <br>
+
+    go to master = git checkout master
+    make new branch and go to new branch = git checkout -b emergency-fix
+    git commit -a -m "Updated index.html with a new line"
+
+    <br>
+    to merge it together with master = git merge emergency-fix
+    to delete a branch = git branch -d emergency-fix
+
+    <br>
+
+    connect to github = git remote add origin https://github.com/w3schools-test/hello-world.git
+
+    to upload to online master = git push --set-upstream origin master
+    check = git fetch origin
+    git pull origin
+
+
+
+
+</body>
+</html>
